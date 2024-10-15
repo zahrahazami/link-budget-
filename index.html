@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Budget Calculator</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+
+    <h1>Link Budget Calculator</h1>
+
+    <form id="linkBudgetForm">
+        <label for="pt">Transmitter Power (P<sub>t</sub>) (dBm): </label>
+        <input type="number" id="pt" name="pt" required><br>
+
+        <label for="gt">Transmitter Gain (G<sub>t</sub>) (dBi): </label>
+        <input type="number" id="gt" name="gt" required><br>
+
+        <label for="gr">Receiver Gain (G<sub>r</sub>) (dBi): </label>
+        <input type="number" id="gr" name="gr" required><br>
+
+        <label for="fspl">Free Space Path Loss (FSPL) (dB): </label>
+        <input type="number" id="fspl" name="fspl" required><br>
+
+        <button type="submit">Calculate Link Budget</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="linkbudget.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
